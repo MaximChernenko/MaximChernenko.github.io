@@ -60,11 +60,11 @@ img {
     width: 900px;
     margin: auto;
     font-size: 0;
-    margin-bottom: 115px;
+    margin-bottom: 116px;
 }
 
 .container:nth-of-type(3){
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 
 .section {
@@ -83,12 +83,15 @@ img {
     color: #beb8ab;
     text-transform: uppercase;
     margin-top: 30px;
+    margin-bottom: -4px;
 }
 
 .section-header {
     font-size: 30px;
     line-height: 36px;
     color: #626262;
+    font-style: 400;
+    margin-bottom: 40px;
 }
 
 .content {
