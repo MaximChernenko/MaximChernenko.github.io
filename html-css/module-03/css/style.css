@@ -24,17 +24,17 @@ ul {
     font-size: 0;
 } 
 
-.menu-item {
+.menu__item {
     display: inline-block;
     height: 44px;
     margin-right: 124px;
 }
 
-.menu-item:nth-of-type(4) {
+.menu__item:nth-of-type(4) {
     margin-right: 0;
 }
 
-.menu-item-link {
+.menu__link {
     display: block;
     text-align: center;
     text-decoration: none;
@@ -44,7 +44,7 @@ ul {
     text-transform: uppercase;
 }
 
-.menu-item-link:hover {
+.menu__link:hover {
     color: #03a9f4;
 }
 
@@ -76,7 +76,7 @@ img {
     margin-right: 60px;
 }
 
-.section-sign {
+.section__sign {
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     line-height: 17px;
@@ -86,7 +86,7 @@ img {
     margin-bottom: -4px;
 }
 
-.section-header {
+.section__header {
     font-size: 30px;
     line-height: 36px;
     color: #626262;
@@ -94,13 +94,13 @@ img {
     margin-bottom: 40px;
 }
 
-.content {
+.section__content {
     font-size: 14px;
     line-height: 24px;
     color: #626262;
 }
 
-.load {
+.button-load {
     display: block;
     margin: auto;
     width: 162px;
@@ -112,6 +112,6 @@ img {
     color: #626262;
 }
 
-.load:hover {
+.button-load:hover {
     color: #03a9f4;
 }
