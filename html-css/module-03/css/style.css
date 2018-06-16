@@ -9,7 +9,7 @@ body {
 }
 
 .menu {
-    margin: 0 auto;
+    margin: auto;
     padding: 0;
     padding-bottom: 20px;
     box-sizing: border-box;
@@ -45,7 +45,7 @@ body {
 }
 
 .container {
-    margin: 0 auto;
+    margin: auto;
     padding-bottom: 132px;
     width: 900px;
     font-size: 0;
