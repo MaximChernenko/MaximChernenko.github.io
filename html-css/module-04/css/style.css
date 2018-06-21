@@ -16,6 +16,10 @@ body {
 
 .menu__logo {
     float: left;
+}
+
+.menu__logo__link {
+    display: block;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     line-height: 32px;
@@ -24,7 +28,7 @@ body {
     color: #555252;
 }
 
-.menu__logo::first-letter {
+.menu__logo__link::first-letter {
     font-weight: 900;
     color: #1abc9c;
 }
@@ -34,14 +38,14 @@ body {
     margin-right: 32px;
 }
 
-.menu__item:first-of-type {
+.menu__item:nth-child(2) {
     margin-right: 0;
 }
 
 .menu__link {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 32px;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
