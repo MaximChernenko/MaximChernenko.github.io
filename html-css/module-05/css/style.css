@@ -70,7 +70,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-carousel__img {
+.carousel__img {
     display: block;
 }
 
@@ -121,6 +121,7 @@ carousel__img {
 
 .container {
     padding-top: 90px;
+    padding-bottom: 100px;
     background-color: #e9f0fd;
 }
 
@@ -147,7 +148,6 @@ carousel__img {
 .inner-container {
     width: 1110px;
     margin: 0 auto;
-    padding-bottom: 100px;
 }
 
 .product {
