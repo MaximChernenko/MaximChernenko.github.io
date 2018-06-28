@@ -26,17 +26,11 @@ body {
 .menu {
     margin: 0;
     padding: 0;
+    width: 490px;
     display: flex;
+    justify-content: space-between;
     list-style: none;
     line-height: 36px;
-}
-
-.menu__item {
-    margin-right: 54px;
-}
-
-.menu__item:last-child {
-    margin-right: 0;
 }
 
 .menu__item::after {
@@ -109,10 +103,14 @@ body {
     margin-top: 32px;
 }
 
-.container__flex-box {
+.container__flex-list {
+    margin: 0;
+    padding: 0;
     display: flex;
+    justify-content: space-between;
     text-align: left;
     flex-wrap: wrap;
+    list-style: none;
 }
 
 .container__flex-item {
@@ -120,19 +118,38 @@ body {
     box-sizing: border-box;
     flex-basis: 380px;
     padding-left: 80px;
-    margin-right: 30px;
 }
 
-.icon {
+.container__flex-item::before {
     position: absolute;
-    top: 20px;
+    top: 6px;
     left: 20px;
     width: 32px;
     height: 32px;
 }
 
-.container__flex-item:nth-child(3n) {
-    margin-right: 0;
+.photo::before {
+    content: url(../img/icon/1.png);
+}
+
+.web::before {
+    content: url(../img/icon/2.png);
+}
+
+.creativity::before {
+    content: url(../img/icon/3.png);
+}
+
+.seo::before {
+    content: url(../img/icon/4.png);
+}
+
+.css::before {
+    content: url(../img/icon/5.png);
+}
+
+.digital::before {
+    content: url(../img/icon/6.png);
 }
 
 .container__flex-item:not(:nth-last-child(-n+3)) {
@@ -168,16 +185,12 @@ body {
 
 .container__nowrap-flex-box {
     display: flex;
+    justify-content: space-between;
 }
 
 .container__nowrap-flex-item {
     position: relative;
     flex-basis: 380px;
-    margin-right: 30px;
-}
-
-.container__nowrap-flex-item:last-child {
-    margin-right: 0;
 }
 
 .flow-container {
