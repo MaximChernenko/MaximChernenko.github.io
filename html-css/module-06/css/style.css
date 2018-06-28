@@ -220,6 +220,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
+    transform: translate(-10px, -10px);
     width: 380px;
     height: 470px;
 }
@@ -233,12 +234,12 @@ body {
     transform: translate(-50%, -50%);
     display: flex;
     width: 224px;
-    height: 56px;
+    height: 59px;
     list-style: none;
 }
 
 .btn-item {
-    width: 50px;
+    width: 55px;
     border-right: 1px solid #f9bd87;
 }
 
