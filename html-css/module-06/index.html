@@ -15,7 +15,7 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="main-header wrapper__main-header">
             <a href="#" class="logo">MoGo</a>
             <nav>
                 <ul class="menu">
@@ -39,136 +39,138 @@
         </header>
         <main>
             <section class="container">
-                <h3 class="container__sign">We work with</h3>
-                <h2 class="container__header">Amazing Services</h2>
-                <div class="container__flex-box">
-                    <div class="container__flex-item">
-                        <h4 class="flex-item__header">Photography</h4>
-                        <p class="flex-item__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        <img src="img/icon/1.png" alt="alarm" class="icon">
-                    </div>
-                    <div class="container__flex-item">
-                        <h4 class="flex-item__header">Web Design</h4>
-                        <p class="flex-item__content">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        <img src="img/icon/2.png" alt="alarm" class="icon">
-                    </div>
-                    <div class="container__flex-item">
-                        <h4 class="flex-item__header">Creativity</h4>
-                        <p class="flex-item__content">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        <img src="img/icon/3.png" alt="alarm" class="icon">
-                    </div>
-                    <div class="container__flex-item">
-                        <h4 class="flex-item__header">Seo</h4>
-                        <p class="flex-item__content">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                        <img src="img/icon/4.png" alt="alarm" class="icon">
-                    </div>
-                    <div class="container__flex-item">
-                        <h4 class="flex-item__header">Css/Html</h4>
-                        <p class="flex-item__content">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
-                        <img src="img/icon/5.png" alt="alarm" class="icon">
-                    </div>
-                    <div class="container__flex-item">
-                        <h4 class="flex-item__header">digital</h4>
-                        <p class="flex-item__content">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                        <img src="img/icon/6.png" alt="alarm" class="icon">
-                    </div>
-                </div>
+                <h3 class="sign container__sign">We work with</h3>
+                <h2 class="header container__header">Amazing Services</h2>
+                <ul class="flex-list">
+                    <li class="flex-list__item photo-icon">
+                        <h4 class="inner-header flex-item__header">Photography</h4>
+                        <p class="inner-content flex-item__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </li>
+                    <li class="flex-list__item web-icon">
+                        <h4 class="inner-header flex-item__header">Web Design</h4>
+                        <p class="inner-content flex-item__content">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </li>
+                    <li class="flex-list__item creativity-icon">
+                        <h4 class="inner-header flex-item__header">Creativity</h4>
+                        <p class="inner-content flex-item__content">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </li>
+                    <li class="flex-list__item seo-icon">
+                        <h4 class="inner-header flex-item__header">Seo</h4>
+                        <p class="inner-content flex-item__content">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                    </li>
+                    <li class="flex-list__item css-icon">
+                        <h4 class="inner-header flex-item__header">Css/Html</h4>
+                        <p class="inner-content flex-item__content">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
+                    </li>
+                    <li class="flex-list__item digital-icon">
+                        <h4 class="inner-header flex-item__header">digital</h4>
+                        <p class="inner-content flex-item__content">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    </li>
+                </ul>
             </section>
             <section class="container">
-                <h3 class="container__sign">Who we are</h3>
-                <h2 class="container__header fix">Meet our team</h2>
-                <p class="container__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                <h3 class="sign container__sign">Who we are</h3>
+                <h2 class="header container__header fix">Meet our team</h2>
+                <p class="content container__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                     commodo consequat. </p>
-                <div class="container__nowrap-flex-box">
-                    <div class="container__nowrap-flex-item">
-                        <img src="img/1.jpg" alt="Mattew Dix" class="nowrap-flex-item__img">
-                        <h5 class="nowrap-flex-item__header">Matthew Dix</h5>
-                        <p class="nowrap-flex-item__content">Graphic Design</p>
-                        <div class="overlay"></div>
-                        <div class="btn-container">
-                            <ul class="btn-list">
-                                <li class="btn-item">
-                                    <button class="btn btn-facebook">
-                                        <span class="visually-hidden">Facebook item</span>
-                                    </button>
-                                </li>
-                                <li class="btn-item">
-                                    <button class="btn btn-twitter">
-                                        <span class="visually-hidden">Twitter item</span>
-                                    </button>
-                                </li>
-                                <li class="btn-item">
-                                    <button class="btn btn-pinterest">
-                                        <span class="visually-hidden">Pinterest item</span>
-                                    </button>
-                                </li>
-                                <li class="btn-item">
-                                    <button class="btn btn-instagram">
-                                        <span class="visually-hidden">Instagram item</span>
-                                    </button>
-                                </li>
-                            </ul>
+                <div class="inner-container">
+                    <div class="inner-container__item">
+                        <div class="flow-container">
+                            <div class="image-container">
+                                <img src="img/1.jpg" alt="Mattew Dix" class="image-container__img">
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="btn-container">
+                                <ul class="btn-list">
+                                    <li class="btn-item">
+                                        <button class="btn btn-facebook">
+                                            <span class="visually-hidden">Facebook item</span>
+                                        </button>
+                                    </li>
+                                    <li class="btn-item">
+                                        <button class="btn btn-twitter">
+                                            <span class="visually-hidden">Twitter item</span>
+                                        </button>
+                                    </li>
+                                    <li class="btn-item">
+                                        <button class="btn btn-pinterest">
+                                            <span class="visually-hidden">Pinterest item</span>
+                                        </button>
+                                    </li>
+                                    <li class="btn-item">
+                                        <button class="btn btn-instagram">
+                                            <span class="visually-hidden">Instagram item</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h5 class="sign-header inner-container__item__header">Matthew Dix</h5>
+                        <p class="sign-content inner-container__item__content">Graphic Design</p>
+                    </div>
+                    <div class="inner-container__item">
+                        <div class="flow-container">
+                            <div class="image-container">
+                                <img src="img/2.jpg" alt="Mattew Dix" class="image-container__img">
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="btn-container">
+                                <ul class="btn-list">
+                                    <li class="btn-item">
+                                        <button class="btn btn-facebook">
+                                            <span class="visually-hidden">Facebook item</span>
+                                        </button>
+                                    </li>
+                                    <li class="btn-item">
+                                        <button class="btn btn-twitter">
+                                            <span class="visually-hidden">Twitter item</span>
+                                        </button>
+                                    </li>
+                                    <li class="btn-item">
+                                        <button class="btn btn-pinterest">
+                                            <span class="visually-hidden">Pinterest item</span>
+                                        </button>
+                                    </li>
+                                    <li class="btn-item">
+                                        <button class="btn btn-instagram">
+                                            <span class="visually-hidden">Instagram item</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="container__nowrap-flex-item">
-                        <img src="img/2.jpg" alt="Christopher Campbell" class="nowrap-flex-item__img">
-                        <h5 class="nowrap-flex-item__header">Christopher Campbell</h5>
-                        <p class="nowrap-flex-item__content">Branding/UX design</p>
-                        <div class="overlay"></div>
-                        <div class="btn-container">
-                            <ul class="btn-list">
-                                <li class="btn-item">
-                                    <button class="btn btn-facebook">
-                                        <span class="visually-hidden">Facebook item</span>
-                                    </button>
-                                </li>
-                                <li class="btn-item">
-                                    <button class="btn btn-twitter">
-                                        <span class="visually-hidden">Twitter item</span>
-                                    </button>
-                                </li>
-                                <li class="btn-item">
-                                    <button class="btn btn-pinterest">
-                                        <span class="visually-hidden">Pinterest item</span>
-                                    </button>
-                                </li>
-                                <li class="btn-item">
-                                    <button class="btn btn-instagram">
-                                        <span class="visually-hidden">Instagram item</span>
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="container__nowrap-flex-item">
-                        <img src="img/3.jpg" alt="Michael Fertig" class="nowrap-flex-item__img">
-                        <h5 class="nowrap-flex-item__header">Michael Fertig </h5>
-                        <p class="nowrap-flex-item__content">Developer</p>
-                        <div class="overlay"></div>
-                        <div class="btn-container">
-                            <ul class="btn-list">
-                                <li class="btn-item">
-                                    <button class="btn btn-facebook">
-                                        <span class="visually-hidden">Facebook item</span>
-                                    </button>
-                                </li>
-                                <li class="btn-item">
-                                    <button class="btn btn-twitter">
-                                        <span class="visually-hidden">Twitter item</span>
-                                    </button>
-                                </li>
-                                <li class="btn-item">
-                                    <button class="btn btn-pinterest">
-                                        <span class="visually-hidden">Pinterest item</span>
-                                    </button>
-                                </li>
-                                <li class="btn-item">
-                                    <button class="btn btn-instagram">
-                                        <span class="visually-hidden">Instagram item</span>
-                                    </button>
-                                </li>
-                            </ul>
+                    <div class="inner-container__item">
+                        <div class="flow-container">
+                            <div class="image-container">
+                                <img src="img/3.jpg" alt="Mattew Dix" class="image-container__img">
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="btn-container">
+                                <ul class="btn-list">
+                                    <li class="btn-item">
+                                        <button class="btn btn-facebook">
+                                            <span class="visually-hidden">Facebook item</span>
+                                        </button>
+                                    </li>
+                                    <li class="btn-item">
+                                        <button class="btn btn-twitter">
+                                            <span class="visually-hidden">Twitter item</span>
+                                        </button>
+                                    </li>
+                                    <li class="btn-item">
+                                        <button class="btn btn-pinterest">
+                                            <span class="visually-hidden">Pinterest item</span>
+                                        </button>
+                                    </li>
+                                    <li class="btn-item">
+                                        <button class="btn btn-instagram">
+                                            <span class="visually-hidden">Instagram item</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -179,8 +181,8 @@
                 <span class="content-des">Laaqiq</span>
             </p>
             <form class="form" action="">
-                <input type="text" name="" id="" class="form__text-box" placeholder="Your Email...">
-                <input type="button1" value="Subscribe" class="form__btn">
+                <input type="email" name="email" class="input" placeholder="Your Email...">
+                <button type="submit" class="submit-btn">Subscribe</button>
             </form>
         </footer>
     </div>
