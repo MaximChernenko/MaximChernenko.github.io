@@ -11,71 +11,83 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">Golden</a>
-        <nav>
-            <ul class="menu">
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Home</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Services</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">Portfolio</a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">About</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="container">
-            <h2 class="container__header">Services</h2>
-            <p class="container__content">Proin iaculis purus consequat sem cure. </p>
-            <ul class="inner-list">
-                <li class="inner-item">
-                    <h4 class="inner-item__header">E-Commerce</h4>
-                    <p class="inner-item__content">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere
-                        odio in tincidunt.</p>
-                </li>
-                <li class="inner-item">
-                    <h4 class="inner-item__header">Responsive Web</h4>
-                    <p class="inner-item__content">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere
-                        odio in tincidunt.</p>
-                </li>
-                <li class="inner-item">
-                    <h4 class="inner-item__header">Web Security</h4>
-                    <p class="inner-item__content">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere
-                        odio in tincidunt.</p>
-                </li>
-            </ul>
-        </section>
-        <section class="container">
-            <h2 class="container__header fix">Contact us</h2>
-            <p class="container__content">Proin iaculis purus consequat sem cure. </p>
-            <form action="" class="container__form">
-                <ul class="form__list">
-                    <li class="form__item">
-                        <input type="text" name="name" class="form__input" placeholder="Your name*" required autocomplete="off">
+    <div class="wrapper">
+        <header class="main-header">
+            <a href="#" class="logo">Golden</a>
+            <nav>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Home</a>
                     </li>
-                    <li class="form__item">
-                        <input type="email" name="email" class="form__input" placeholder="Your e-mail*" required autocomplete="off">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Services</a>
                     </li>
-                    <li class="form__item">
-                        <input type="text" name="subject" class="form__input" placeholder="Subject" autocomplete="off">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Portfolio</a>
                     </li>
-                    <li class="form__item">
-                        <textarea name="message" class="form__textarea" placeholder="Your message*" required autocomplete="off"></textarea>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">About</a>
                     </li>
-                    <li class="form__item">
-                        <button type="submit" class="form__button">Send Message</button>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Contact</a>
                     </li>
                 </ul>
-            </form>
-        </section>
-    </main>
+            </nav>
+        </header>
+        <main>
+            <section class="container">
+                <h2 class="header container__header">Services</h2>
+                <p class="content container__content">Proin iaculis purus consequat sem cure. </p>
+                <div class="inner-wrapper">
+                    <ul class="inner-list">
+                        <li class="inner-item">
+                            <div class="border-round build-icon"></div>
+                            <h4 class="sign-header inner-item__header">E-Commerce</h4>
+                            <p class="sign-content inner-item__content">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
+                                in tincidunt.
+                            </p>
+                        </li>
+                        <li class="inner-item">
+                            <div class="border-round laptop-icon"></div>
+                            <h4 class="sign-header inner-item__header">Responsive Web</h4>
+                            <p class="sign-content inner-item__content">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
+                                in tincidunt.
+                            </p>
+                        </li>
+                        <li class="inner-item">
+                            <div class="border-round lock-icon "></div>
+                            <h4 class="sign-header inner-item__header">Web Security</h4>
+                            <p class="sign-content inner-item__content">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus
+                                in tincidunt.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="container">
+                <h2 class="header container__header fix">Contact us</h2>
+                <p class="content container__content">Proin iaculis purus consequat sem cure. </p>
+                <form action="" class="form container__form">
+                    <div class="inner-container">
+                        <ul class="input-list">
+                            <li class="input-item">
+                                <input type="text" name="name" class="input required" placeholder="Your name*" required autocomplete="off">
+                            </li>
+                            <li class="input-item">
+                                <input type="email" name="email" class="input required" placeholder="Your e-mail*" required autocomplete="off">
+                            </li>
+                            <li class="input-item">
+                                <input type="text" name="subject" class="input" placeholder="Subject" autocomplete="off">
+                            </li>
+                        </ul>
+                        <textarea name="message" class="textarea required" placeholder="Your message*" required autocomplete="off"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                    </ul>
+                </form>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>

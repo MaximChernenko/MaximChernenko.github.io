@@ -2,6 +2,21 @@ body {
     font-family: 'Montserrat';
 }
 
+.wrapper {
+    width: 1400px;
+    margin: auto;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 72px;
+}
+
 .logo {
     font-family: 'Swanky and Moo Moo', sans-serif;
     font-size: 30px;
@@ -11,8 +26,20 @@ body {
     color: #fed136;
 }
 
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 490px;
+    list-style: none;
+}
+
+.menu__item:hover .menu__link {
+    color: #fed443;
+}
+
 .menu__link {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 14px;
     line-height: 40px;
     text-transform: uppercase;
@@ -20,7 +47,25 @@ body {
     color: #222222;
 }
 
-.container__header {
+.container {
+    text-align: center;
+    padding-bottom: 114px;
+}
+
+.container:last-child {
+    padding-top: 94px;
+    background-color: #222222;
+    background-image: url(../img/1.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.inner-wrapper {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.header {
     font-weight: 700;
     font-size: 40px;
     line-height: 75px;
@@ -28,42 +73,143 @@ body {
     color: #222222;
 }
 
+.container__header {
+    margin: 0;
+}
+
 .fix {
-    line-height: 48px;
+    line-height: 64px;
     color: #ffffff;
 }
 
-.container__content {
+.content {
     font-family: 'DroidSerif';
     font-size: 16px;
     color: #777777;
 }
 
-.inner-item__header {
+.container__content {
+    margin: 0;
+    margin-bottom: 78px;
+}
+
+.inner-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-item {
+    width: 280px;
+}
+
+.border-round {
+    margin: 0 auto;
+    border: 4px solid #fed136;
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.build-icon {
+    background-image: url(../img/icons/1.png);
+}
+
+.laptop-icon {
+    background-image: url(../img/icons/2.png);
+}
+
+.lock-icon {
+    background-image: url(../img/icons/3.png);
+}
+
+.sign-header {
     font-weight: 700;
     font-size: 18px;
-    line-height: 75px;
+    line-height: 62px;
     color: #222222;
 }
 
-.inner-item__content {
+.inner-item__header {
+    margin: 0;
+}
+
+.sign-content {
     font-family: 'Roboto Slab';
     font-size: 14px;
+    line-height: 18px;
     color: #777777;
 }
 
-.form__input::placeholder, .form__textarea::-webkit-input-placeholder {
+.inner-item__content {
+    margin: 0;
+}
+
+.form {
+    width: 940px;
+}
+
+.container__form {
+    margin: 0 auto;
+}
+
+.inner-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.input-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.textarea {
+    box-sizing: border-box;
+    width: 456px;
+    height: 210px;
+    padding: 20px;
+    resize: none;
+}
+
+.input {
+    box-sizing: border-box;
+    width: 456px;
+    padding: 15px 20px;
+}
+
+.required:valid {
+    outline: 2px solid rgb(74, 230, 74);
+}
+
+.required:invalid {
+    outline: 2px solid rgb(212, 35, 35);
+}
+
+.input::placeholder, .textarea::-webkit-input-placeholder {
     font-weight: 700;
     font-size: 14px;
     color: #bbbbbb;
     text-transform: uppercase;
 }
 
-.form__button {
+.submit-button {
+    border: none;
+    padding: 22px 0;
+    width: 240px;
     font-weight: 700;
     font-size: 18px;
     color: #ffffff;
     text-transform: uppercase;
+    background-color: #fed136;
 }
 
 /* swanky-and-moo-moo-regular - latin */
@@ -76,15 +222,6 @@ body {
          url('../fonts/swanky-and-moo-moo-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* montserrat-regular - latin */
-@font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Montserrat Regular'), local('Montserrat-Regular'),
-         url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/montserrat-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 /* montserrat-700 - latin */
 @font-face {
     font-family: 'Montserrat';
