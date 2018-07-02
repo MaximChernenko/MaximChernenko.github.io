@@ -63,7 +63,6 @@ body {
 
 .container {
     text-align: center;
-    padding-bottom: 88px;
 }
 
 .container:last-child {
@@ -123,16 +122,16 @@ body {
 }
 
 .flex-list__item {
-    position: relative;
+    min-height: 168px;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
     box-sizing: border-box;
     flex-basis: 380px;
-    padding-left: 80px;
 }
 
 .flex-list__item::before {
-    position: absolute;
-    top: 6px;
-    left: 20px;
+    margin: 0 32px;
     width: 32px;
     height: 32px;
 }
@@ -161,10 +160,6 @@ body {
     content: url(../img/icon/6.png);
 }
 
-.flex-list__item:not(:nth-last-child(-n+3)) {
-    margin-bottom: 96px;
-}
-
 .inner-header {
     font-size: 14px;
     font-weight: 400;
@@ -172,7 +167,6 @@ body {
 
 .flex-item__header {
     margin: 0;
-    margin-bottom: 10px;
 }
 
 .inner-content, .container__content, .sign-content, .form__text-box, ::placeholder {
@@ -187,7 +181,7 @@ body {
 }
 
 .flex-item__content {
-    margin: 0;
+    margin: 0 0 0 96px;
 }
 
 .content {
@@ -223,12 +217,21 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    width: 380px;
+    height: 470px;
     transition-property: top,left;
 }
 
-.image-container__img {
-    width: 380px;
-    height: 470px;
+.Matthew-Dix {
+    background-image: url(../img/1.jpg);
+}
+
+.Christopher-Campbell {
+    background-image: url(../img/2.jpg);
+}
+
+.Michael-Fertig {
+    background-image: url(../img/3.jpg);
 }
 
 .sign-header {
@@ -259,7 +262,7 @@ body {
     width: 380px;
     height: 470px;
     background-image: linear-gradient(to bottom, #ee8a8a, #eed687);
-    transition-property: opacity, top, left;
+    transition-property: opacity;
 }
 
 .btn-container {
@@ -270,7 +273,6 @@ body {
     left: 0px;
     width: 380px;
     height: 470px;
-    transition-property: top, left;
 }
 
 .btn-list {
@@ -327,14 +329,10 @@ body {
 }
 
 .flow-container:hover .overlay {
-    top: -10px;
-    left: -10px;
     opacity: 0.9;
 }
 
 .flow-container:hover .btn-container {
-    top: -10px;
-    left: -10px;
     display: block;
 }
 
@@ -381,7 +379,7 @@ body {
 
 /* transition properties */
 
-.btn, .overlay, .image-container, .menu__link, .submit-btn {
+.btn, .image-container, .menu__link, .submit-btn {
     transition-duration: 0.2s;
     transition-timing-function: linear;
 }
