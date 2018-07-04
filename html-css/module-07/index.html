@@ -69,18 +69,12 @@
                 <p class="content container__content">Proin iaculis purus consequat sem cure. </p>
                 <form action="" class="form container__form">
                     <div class="inner-container">
-                        <ul class="input-list">
-                            <li class="input-item">
-                                <input type="text" name="name" class="input required" placeholder="Your name*" required autocomplete="off">
-                            </li>
-                            <li class="input-item">
-                                <input type="email" name="email" class="input required" placeholder="Your e-mail*" required autocomplete="off">
-                            </li>
-                            <li class="input-item">
-                                <input type="text" name="subject" class="input" placeholder="Subject" autocomplete="off">
-                            </li>
-                        </ul>
-                        <textarea name="message" class="textarea required" placeholder="Your message*" required autocomplete="off"></textarea>
+                        <div class="input-box">
+                                <input type="text" name="name_input" class="input required" placeholder="Your name*" maxlength="20" required autocomplete="off">
+                                <input type="email" name="email_input" class="input required" placeholder="Your e-mail*" required autocomplete="off">
+                                <input type="text" name="theme_input" class="input" placeholder="Subject" autocomplete="off">
+                        </div>
+                        <textarea name="message_area" class="textarea required" placeholder="Your message*" required autocomplete="off"></textarea>
                     </div>
                     <button type="submit" class="submit-button">Send Message</button>
                     </ul>

@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', 'Arial', sans-serif;;
+    font-family: 'Montserrat';
 }
 
 .wrapper {
@@ -13,8 +13,8 @@ body {
     align-items: center;
     width: 940px;
     margin: 0 auto;
-    padding-top: 24px;
-    padding-bottom: 72px;
+    padding-top: 40px;
+    padding-bottom: 86px;
 }
 
 .logo {
@@ -27,6 +27,7 @@ body {
 }
 
 .menu {
+    margin: 0;
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -49,7 +50,7 @@ body {
 
 .container {
     text-align: center;
-    padding-bottom: 114px;
+    padding-bottom: 124px;
 }
 
 .container:last-child {
@@ -83,7 +84,7 @@ body {
 }
 
 .content {
-    font-family: 'DroidSerif', 'Arial', sans-serif;;
+    font-family: 'DroidSerif';
     font-size: 16px;
     color: #777777;
 }
@@ -107,6 +108,7 @@ body {
 
 .border-round {
     margin: 0 auto;
+    margin-bottom: 15px;
     border: 4px solid #fed136;
     border-radius: 50%;
     width: 66px;
@@ -130,12 +132,11 @@ body {
 .sign-header {
     font-weight: 700;
     font-size: 18px;
-    line-height: 62px;
     color: #222222;
 }
 
 .inner-item__header {
-    margin: 0;
+    margin: 0 0 15px 0;
 }
 
 .sign-content {
@@ -163,13 +164,10 @@ body {
     margin-bottom: 32px;
 }
 
-.input-list {
+.input-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
 .textarea {
