@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 320px;
+    text-align: center;
+}
+
+.page-header {
+    box-sizing: border-box;
+    padding-top: 20px;
+    min-height: 540px;
+    background-image: url(../img/1.jpg);
+}
+
+.log-list {
+    padding: 0;
+    list-style: none;
+    width: 154px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.log-list__page-header {
+    margin: 0 auto;
+    margin-bottom: 114px;
+}
+
+.log-btn {
+    border: none;
+    padding: 7px 0;
+    background-color: transparent;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.sign-btn {
+    padding: 7px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+}
+
+.header {
+    width: 260px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.header__page-header {
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.header__container {
+    margin: 0 auto;
+    margin-bottom: 18px;
+}
+
+.main-header {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.main-header__page-header {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.content {
+    width: 218px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.content__page-header {
+    margin: 0 auto;
+    margin-bottom: 14px;
+}
+
+.find-btn {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 50px;
+    background-color: #ff4e50;
+}
+
+.container {
+    padding-top: 66px;
+    padding-bottom: 56px;
+}
+
+.black {
+    text-transform: none;
+    color: #333333;
+}
+
+.partner-list {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    width: 200px;
+}
+
+.partner-item {
+    position: relative;
+}
+
+.Bradley:before {
+    content: url(../img/1.png);
+}
+
+.Lucas:before {
+    content: url(../img/2.png);
+}
+
+.Heather:before {
+    content: url(../img/3.png);
+}
+
+.Hunter:before {
+    content: url(../img/4.png);
+}
+
+.icon {
+    position: absolute;
+    right: 34px;
+    top: 84px;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    background-color: #ff4e50;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tv {
+    background-image: url(../img/icons/1.png);
+}
+
+.lock {
+    background-image: url(../img/icons/2.png);
+}
+
+.coffee {
+    background-image: url(../img/icons/3.png);
+}
+
+.plane {
+    background-image: url(../img/icons/4.png);
+}
+
+.sign-header {
+    font-size: 14px;
+    color: #333333;
+}
+
+.sign-header__partner-list {
+    margin: 0;
+    margin-top: 14px;
+    margin-bottom: 12px;
+}
+
+.sign-content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #666666;
+}
+
+.sign-content__partner-list {
+    margin: 0;
+    margin-bottom: 26px;
+}
+
+.show-btn {
+    padding: 8px 72px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ff4e50;
+    border: 2px solid  #ff4e50;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        width: 768px;
+    }
+
+    .page-header {
+        position: relative;
+        padding-top: 42px;
+        min-height: 700px;
+        background-image: url(../img/11.jpg);
+    }
+
+    .header {
+        width: auto;
+    }
+
+    .header__page-header {
+        margin: 0;
+    }
+
+    .inner-wrapper {
+        margin: 0 auto;
+        margin-bottom: 138px;
+        width: 670px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .log-list__page-header {
+        order: 1;
+        margin: 0;
+    }
+
+    .main-header {
+        width: 504px;
+        font-size: 52px;
+    }
+
+    .main-header__page-header {
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+
+    .content {
+        width: 414px;
+        font-size: 24px;
+    }
+
+    .content__page-header {
+        margin-bottom: 34px;
+    }
+
+    .find-btn {
+        padding: 10px 34px;
+    }
+}

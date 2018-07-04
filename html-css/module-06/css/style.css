@@ -112,6 +112,7 @@ body {
 }
 
 .flex-list {
+    min-height: 336px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -122,7 +123,8 @@ body {
 }
 
 .flex-list__item {
-    min-height: 168px;
+    padding-left: 96px;
+    position: relative;
     display: flex;
     align-content: flex-start;
     flex-wrap: wrap;
@@ -131,7 +133,9 @@ body {
 }
 
 .flex-list__item::before {
-    margin: 0 32px;
+    position: absolute;
+    top: 0;
+    left: 32px;
     width: 32px;
     height: 32px;
 }
@@ -180,9 +184,9 @@ body {
     color: #999999;
 }
 
-.flex-item__content {
+/* .flex-item__content {
     margin: 0 0 0 96px;
-}
+} */
 
 .content {
     width: 944px;
@@ -350,6 +354,7 @@ body {
 }
 
 .footer__content {
+    margin: 0;
     font-size: 14px;
     font-weight: 400;
     color: #333333;
