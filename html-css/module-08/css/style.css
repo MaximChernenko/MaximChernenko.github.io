@@ -16,8 +16,6 @@ body {
 }
 
 .log-list {
-    padding: 0;
-    list-style: none;
     width: 154px;
     display: flex;
     justify-content: space-between;
@@ -66,7 +64,6 @@ body {
 }
 
 .main-header__page-header {
-    margin: 0;
     margin-bottom: 16px;
 }
 
@@ -104,8 +101,6 @@ body {
 
 .partner-list {
     margin: 0 auto;
-    padding: 0;
-    list-style: none;
     width: 220px;
 }
 
@@ -113,19 +108,24 @@ body {
     position: relative;
 }
 
-.Bradley:before {
+.partner-item::before {
+    width: 120px;
+    height: 120px;
+}
+
+.Bradley::before {
     content: url(../img/1.png);
 }
 
-.Lucas:before {
+.Lucas::before {
     content: url(../img/2.png);
 }
 
-.Heather:before {
+.Heather::before {
     content: url(../img/3.png);
 }
 
-.Hunter:before {
+.Hunter::before {
     content: url(../img/4.png);
 }
 
@@ -168,7 +168,6 @@ body {
 }
 
 .sign-header__partner-list {
-    margin: 0;
     margin-top: 14px;
     margin-bottom: 12px;
 }
@@ -181,7 +180,6 @@ body {
 }
 
 .sign-content__partner-list {
-    margin: 0;
     margin-bottom: 30px;
 }
 
