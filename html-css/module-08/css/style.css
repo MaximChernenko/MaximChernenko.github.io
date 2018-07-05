@@ -24,11 +24,6 @@ body {
     justify-content: space-between;
 }
 
-.log-list__page-header {
-    margin: 0 auto;
-    margin-bottom: 114px;
-}
-
 .log-btn {
     border: none;
     padding: 7px 0;
@@ -48,11 +43,6 @@ body {
     font-size: 21px;
     text-transform: uppercase;
     color: #ffffff;
-}
-
-.header__page-header {
-    margin: 0 auto;
-    margin-bottom: 32px;
 }
 
 .header__container {
@@ -198,6 +188,18 @@ body {
     background-color: transparent;
 }
 
+@media screen and (max-width: 767px) {
+    .header__page-header {
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+
+    .log-list__page-header {
+        margin: 0 auto;
+        margin-bottom: 114px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .page-header {
         position: relative;
@@ -208,10 +210,6 @@ body {
 
     .header {
         width: auto;
-    }
-
-    .header__page-header {
-        margin: 0;
     }
 
     .inner-wrapper {
@@ -225,7 +223,6 @@ body {
 
     .log-list__page-header {
         order: 1;
-        margin: 0;
     }
 
     .main-header {
@@ -234,12 +231,10 @@ body {
     }
 
     .main-header__page-header {
-        margin: 0 auto;
         margin-bottom: 24px;
     }
 
     .content {
-        padding: 0;
         width: 414px;
         font-size: 24px;
     }
