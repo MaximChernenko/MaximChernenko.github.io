@@ -9,12 +9,15 @@ body {
 
 .page-header {
     box-sizing: border-box;
-    padding-top: 20px;
     min-height: 540px;
     background-image: url(../img/1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.overlay {
+    padding-top: 20px;
 }
 
 .log-list {
@@ -99,28 +102,15 @@ body {
     position: relative;
 }
 
-.partner-item::before {
+.partner-item__img {
+    display: block;
+    margin: 0 auto 14px auto;
     width: 120px;
     height: 120px;
 }
 
-.Bradley::before {
-    content: url(../img/1.png);
-}
-
-.Lucas::before {
-    content: url(../img/2.png);
-}
-
-.Heather::before {
-    content: url(../img/3.png);
-}
-
-.Hunter::before {
-    content: url(../img/4.png);
-}
-
-.icon {
+.icon::before {
+    content: '';
     position: absolute;
     right: 34px;
     top: 84px;
@@ -133,22 +123,22 @@ body {
     background-position: center;
 }
 
-.tv {
+.tv::before {
     background-color: #ff4e50;
     background-image: url(../img/icons/1.png);
 }
 
-.lock {
+.lock::before {
     background-color: #ffa507;
     background-image: url(../img/icons/2.png);
 }
 
-.coffee {
+.coffee::before {
     background-color: #1cd7ad;
     background-image: url(../img/icons/3.png);
 }
 
-.plane {
+.plane::before {
     background-color: #4e73db;
     background-image: url(../img/icons/4.png);
 }
@@ -159,7 +149,7 @@ body {
 }
 
 .sign-header__partner-list {
-    margin: 14px 0 12px 0;
+    margin: 0 0 12px 0;
 }
 
 .sign-content {
@@ -167,10 +157,6 @@ body {
     font-size: 14px;
     font-weight: 300;
     color: #666666;
-}
-
-.sign-content__partner-list {
-    margin-bottom: 30px;
 }
 
 .show-btn {
@@ -191,15 +177,24 @@ body {
     .log-list__page-header {
         margin: 0 auto 114px auto;
     }
+
+    .partner-item {
+        margin-bottom: 36px;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .page-header {
         position: relative;
-        padding-top: 42px;
         min-height: 700px;
         background-image: url(../img/11.jpg);
     }
+
+    .overlay {
+        padding-top: 42px;
+        background-color: rgba(26, 25, 21, 0.248);
+        min-height: 700px;
+    }    
 
     .header {
         width: auto;
@@ -244,12 +239,12 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
         width: 484px;
+        margin-bottom: 14px;
     }
     
     .partner-item {
         width: 220px;
         min-height: 244px;
-        margin-bottom: 14px;
     }
 
     .header__container {
@@ -260,20 +255,14 @@ body {
         font-size: 22px;
     }
     
-    .Heather{
-        order: 1;
-    }
-
-    .Lucas {
-        order: 2;
-    }
-    
-    .Hunter {
-        order: 3;
-    }
-
     .show-btn {
         padding: 10px 26px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 941px) {
+    .partner-list {
+        min-height: 516px;
     }
 }
 
