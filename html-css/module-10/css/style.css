@@ -1,0 +1,77 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+.header__logo, .header__main-title, .btn, .wrapper__header {
+    font-weight: 700;
+}
+
+.header__logo, .header__link, .header__title, .header__main-title, .btn {
+    color: #ffffff;
+}
+
+.header__logo {
+    font-size: 30px;
+}
+
+.header__link {
+    font-size: 14px;
+}
+
+.header__title {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+}
+
+.header__main-title {
+    font-size: 150px;
+}
+
+.btn {
+    font-size: 14px;
+}
+
+.wrapper__sign-header {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+}
+
+.wrapper__header {
+    font-size: 30px;
+}
+
+.item-section-services__sign-header, .item-team__title, .wrapper__header, .wrapper__sign-header, .copyright {
+    color: #333333;
+}
+
+.item-section-services__sign-header, .item-team__title {
+    font-size: 14px;
+}
+
+.item-section-services__text, .section-team__text, .item-team__text, .input::-webkit-input-placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.item-section-services__text, .section-team__text, .item-team__text {
+    color: #999999;
+}
+
+.item-team__text, .input::-webkit-input-placeholder {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+.copyright__desgn {
+    color: #f38181;
+}
+
+.input::-webkit-input-placeholder {
+    color: #cccccc;
+}
