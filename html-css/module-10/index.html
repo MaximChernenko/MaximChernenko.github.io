@@ -15,62 +15,68 @@
 
 <body>
     <header class="header">
-        <a href="#" class="header__logo">MoGo</a>
-        <nav>
-            <ul class="list header__menu">
-                <li class="header__item">
-                    <a class="header__link" href="#">About</a>
-                </li>
-                <li class="header__item">
-                    <a class="header__link" href="#">Service</a>
-                </li>
-                <li class="header__item">
-                    <a class="header__link" href="#">Work</a>
-                </li>
-                <li class="header__item">
-                    <a class="header__link" href="#">Blog</a>
-                </li>
-                <li class="header__item">
-                    <a class="header__link" href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <span class="icon icon-basket">
-            <svg>
-                <use href="img/icons/sprite.svg#basket-icon"/>
-            </svg>
-        </span>
-        <span class="icon icon-search"></span>
-        <h2 class="header__title">Creative Template</h2>
-        <h1 class="header__main-title">Welcome to MoGo</h1>
-        <button class="btn btn-more">Learn more</button>
+        <div class="overlay">
+            <div class="container">
+                <div class="inner-container">
+                    <a href="#" class="link header__logo">MoGo</a>
+                    <nav class="nav-container">
+                        <ul class="list header__menu">
+                            <li class="header__item">
+                                <a class="link header__link" href="#">About</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="link header__link" href="#">Service</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="link header__link" href="#">Work</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="link header__link" href="#">Blog</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="link header__link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <svg class="nav-icon">
+                            <use href="img/icons/sprite.svg#basket-icon" />
+                        </svg>
+                        <svg class="nav-icon">
+                            <use href="img/icons/sprite.svg#search-icon" />
+                        </svg>
+                    </nav>
+                </div>
+                <h2 class="header__title">Creative Template</h2>
+                <h1 class="header__main-title">Welcome to MoGo</h1>
+                <button class="btn btn-more">Learn more</button>
+            </div>
+        </div>
     </header>
     <main class="wrapper">
         <section class="section-services">
             <h4 class="wrapper__sign-header">We work with</h4>
             <h3 class="wrapper__header">Amazing Services</h3>
             <ul class="list section-services__list">
-                <li class="section-services__item item-section-services">
+                <li class="item-section-services icon-alarm">
                     <h5 class="item-section-services__sign-header">Photography</h5>
                     <p class="item-section-services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </li>
-                <li class="section-services__item item-section-services">
+                <li class="item-section-services icon-picture">
                     <h5 class="item-section-services__sign-header">Web Design</h5>
                     <p class="item-section-services__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </li>
-                <li class="section-services__item item-section-services">
+                <li class="item-section-services icon-computer">
                     <h5 class="item-section-services__sign-header">Creativity</h5>
                     <p class="item-section-services__text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tem</p>
                 </li>
-                <li class="section-services__item item-section-services">
+                <li class="item-section-services icon-book">
                     <h5 class="item-section-services__sign-header">seo</h5>
                     <p class="item-section-services__text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                 </li>
-                <li class="section-services__item item-section-services">
+                <li class="item-section-services icon-house">
                     <h5 class="item-section-services__sign-header">Css/Html</h5>
                     <p class="item-section-services__text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
                 </li>
-                <li class="section-services__item item-section-services">
+                <li class="item-section-services icon-img">
                     <h5 class="item-section-services__sign-header">digital</h5>
                     <p class="item-section-services__text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </li>
@@ -83,16 +89,32 @@
                 magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat.
             </p>
-            <ul class="section-team__list">
+            <ul class="list section-team__list">
                 <li class="section-team__item item-team">
                     <div class="item-team__flow">
-                        <div class="item-team__img">
+                        <div class="item-team__img Matthew">
                             <div class="item-team__overlay"></div>
-                            <div class="item-team__btn-container btn-container">
-                                <button class="btn-container__btn icon icon-facebook"></button>
-                                <button class="btn-container__btn icon icon-twitter"></button>
-                                <button class="btn-container__btn icon icon-printerest"></button>
-                                <button class="btn-container__btn icon icon-instagram"></button>
+                            <div class="btn-container">
+                                <button class="btn-container__btn">
+                                    <svg class="social-icon">
+                                        <use href="img/icons/sprite.svg#facebook-icon" />
+                                    </svg>
+                                </button>
+                                <button class="btn-container__btn">
+                                    <svg class="social-icon">
+                                        <use href="img/icons/sprite.svg#twitter-icon" />
+                                    </svg>
+                                </button>
+                                <button class="btn-container__btn">
+                                    <svg class="social-icon">
+                                        <use href="img/icons/sprite.svg#pinterest-icon" />
+                                    </svg>
+                                </button>
+                                <button class="btn-container__btn">
+                                    <svg class="social-icon">
+                                        <use href="img/icons/sprite.svg#instagram-icon" />
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -101,13 +123,29 @@
                 </li>
                 <li class="section-team__item item-team">
                     <div class="item-team__flow">
-                        <div class="item-team__img">
+                        <div class="item-team__img Christopher">
                             <div class="item-team__overlay"></div>
-                            <div class="item-team__btn-container btn-container">
-                                <button class="btn-container__btn icon icon-facebook"></button>
-                                <button class="btn-container__btn icon icon-twitter"></button>
-                                <button class="btn-container__btn icon icon-printerest"></button>
-                                <button class="btn-container__btn icon icon-instagram"></button>
+                            <div class="btn-container">
+                                <button class="btn-container__btn">
+                                    <svg class="social-icon">
+                                        <use href="img/icons/sprite.svg#facebook-icon" />
+                                    </svg>
+                                </button>
+                                <button class="btn-container__btn">
+                                    <svg class="social-icon">
+                                        <use href="img/icons/sprite.svg#twitter-icon" />
+                                    </svg>
+                                </button>
+                                <button class="btn-container__btn">
+                                    <svg class="social-icon">
+                                        <use href="img/icons/sprite.svg#pinterest-icon" />
+                                    </svg>
+                                </button>
+                                <button class="btn-container__btn">
+                                    <svg class="social-icon">
+                                        <use href="img/icons/sprite.svg#instagram-icon" />
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -116,13 +154,29 @@
                 </li>
                 <li class="section-team__item item-team">
                     <div class="item-team__flow">
-                        <div class="item-team__img">
+                        <div class="item-team__img Michael">
                             <div class="item-team__overlay"></div>
-                            <div class="item-team__btn-container btn-container">
-                                <button class="btn-container__btn icon icon-facebook"></button>
-                                <button class="btn-container__btn icon icon-twitter"></button>
-                                <button class="btn-container__btn icon icon-printerest"></button>
-                                <button class="btn-container__btn icon icon-instagram"></button>
+                            <div class="btn-container">
+                                <button class="btn-container__btn">
+                                    <svg class="social-icon">
+                                        <use href="img/icons/sprite.svg#facebook-icon" />
+                                    </svg>
+                                </button>
+                                <button class="btn-container__btn">
+                                    <svg class="social-icon">
+                                        <use href="img/icons/sprite.svg#twitter-icon" />
+                                    </svg>
+                                </button>
+                                <button class="btn-container__btn">
+                                    <svg class="social-icon">
+                                        <use href="img/icons/sprite.svg#pinterest-icon" />
+                                    </svg>
+                                </button>
+                                <button class="btn-container__btn">
+                                    <svg class="social-icon">
+                                        <use href="img/icons/sprite.svg#instagram-icon" />
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -141,6 +195,7 @@
             <button type="submit" class="btn btn-sub">Subscribe</button>
         </form>
     </footer>
+
 </body>
 
 </html>

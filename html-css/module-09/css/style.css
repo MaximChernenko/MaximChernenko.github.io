@@ -15,6 +15,10 @@ body {
     padding-top: 20px;
 }
 
+.btn {
+    cursor: pointer;
+}
+
 .log-list {
     width: 154px;
     display: flex;
@@ -197,6 +201,10 @@ body {
 
     .main-header__page-header {
         margin-bottom: 24px;
+    }
+
+    .mg-md-auto {
+        margin: 0 auto;
     }
 
     .mgb-md-144 {
