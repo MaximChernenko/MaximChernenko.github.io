@@ -1,0 +1,38 @@
+.footer {
+    @extend %base-position;
+    width: $main-width;
+    margin: $block-center;
+    padding-bottom: 10px;
+}
+
+.copyright {
+    margin: 0;
+    font-size: map-get($map: $font-sizes, $key: small);
+    color: color(dark-grey);
+}
+
+.copyright__desgn {
+    color: color(light-red);
+}
+
+.sub-form {
+    display: flex;
+}
+
+.input {
+    width: 214px;
+    padding: 10px 0 10px 12px;
+    border: 1px solid color(primary-grey);
+    &::-webkit-input-placeholder {
+        @extend %font-middle-style;
+        @extend %font-light-italic;
+        font-size: map-get($map: $font-sizes, $key: x-small);
+        color: color(light-grey);
+    }
+}
+
+.btn-sub {
+    @extend %btn;
+    padding: 12px 34px;
+    background-color: color(light-green);
+}

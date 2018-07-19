@@ -1,0 +1,31 @@
+%base-position {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+%btn {
+    color: color(primary-white);
+    font-weight: 700;
+    font-size: map-get($map: $font-sizes, $key: small);
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+}
+
+%font-middle-style {
+    font-family: $Roboto-family;
+    font-size: map-get($map: $font-sizes, $key: x-small);
+    line-height: map-get($map: $line-heights, $key: middle);
+}
+
+%font-light-italic {
+    font-weight: 300;
+    font-style: italic;
+}

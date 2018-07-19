@@ -1,0 +1,33 @@
+body {
+    font-family: $Montserrat-family;
+    text-align: center;
+}
+
+.wrapper {
+    width: $main-width;
+    margin: $block-center;
+    padding-top: 44px;
+    padding-bottom: 10px;
+}
+
+.wrapper__sign-header {
+    font-family: $Kaushan-family;
+    font-size: map-get($map: $font-sizes, $key: middle);
+    margin: 0 0 12px;
+    color: color(dark-grey);
+}
+
+.wrapper__header {
+    font-weight: 700;
+    font-size: map-get($map: $font-sizes, $key: large);
+    color: color(dark-grey);
+    margin: 0 0 40px;
+    &::after {
+        display: block;
+        margin: 40px auto 0;
+        content: '';
+        width: 60px;
+        height: 3px;
+        background-color: color(light-red);
+    }
+}
