@@ -1,0 +1,192 @@
+.header {
+    @include background-sett(url(../img/header.jpg),$pos: 48% 0, $size: auto);
+    min-width: 320px;
+    min-height: 660px;
+    @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../img/header@2x.jpg);
+    }
+    @media screen and (max-width: 1199px) {
+        padding-top: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+        min-height: 880px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 115px;
+            display: block;
+            height: 1px;
+            width: 100%;
+            background-color: rgba(color(secondary-grey), 0.6);
+        }
+    }
+}
+
+.header-container {
+    @media screen and (min-width: 1200px) {
+        @include flex-pos($align-items: center);
+        padding: 30px 0 0 34px;
+        margin-bottom: 280px;
+    }
+}
+
+.inner {
+    @media screen and (min-width: 1200px) {
+        width: 877px;
+        @include flex-pos($align-items: center);
+    }
+}
+
+.logo {
+    width: 67px;
+    @media screen and (max-width: 1199px) {
+        display: block;
+        margin: 0 auto 40px;
+    }
+}
+
+.logo__flow {
+    position: relative;
+    background-color: rgba(color(primary-light), 0.749);
+    height: 67px;
+    &:hover .logo__action {
+        top: -8px;
+        left: -12px;
+    }
+}
+
+.logo__action {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: color(primary-blue);
+    width: 67px;
+    height: 67px;
+}
+
+.logo-icon {
+    @include absolute-centered($transform: translate(-55%,-50%));
+    position: absolute;
+    width: 34px;
+    height: 24px;
+}
+
+.nav {
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 40px;
+    }
+}
+
+.menu {
+    @media screen and (max-width: 1199px) {
+        display: inline-block;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 702px;
+        height: 30px;
+        @include flex-pos($justify-content: space-around);
+    }
+}
+
+.menu__item {
+    &:hover {
+        @media screen and (max-width: 1199px) {
+            background-color: rgba(color(primary-light), 0.749);
+        }
+    }
+    &:hover .menu__link {
+        color: color(primary-blue);
+    }
+    @media screen and (min-width: 1200px) {
+        &::after {
+            content: '';
+            margin-top: 30px;
+            display: none;
+            width: 100%;
+            height: 6px;
+            background-color: color(primary-blue);
+        }
+        &:hover::after {
+            display: block;
+        }
+    }
+}
+
+.menu__link {
+    @include font-sett(font(Barlow-family), 1.25rem, $height: 1.5);
+}
+
+.socials {
+    @include flex-pos();
+    @media screen and (max-width: 1199px) {
+        width: 250px;
+        margin: 0 auto 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 146px;
+        height: 20px;
+    }
+}
+
+.socials__icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    fill: color(primary-light);
+    &:hover {
+        fill: color(primary-blue);
+    }
+    @media screen and (min-width: 1200px) {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.header__main-title {
+    @include font-sett($size: 3.125rem, $weight:700, $transform: uppercase);
+    @media screen and (min-width: 1200px) {
+        font-size: 8.7rem;
+        letter-spacing: 6px;
+    }
+}
+
+.header__text {
+    @include font-sett($size: 1.125rem, $weight:500, $transform: uppercase, $color: color(primary-blue));
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 1.38rem;
+        margin-bottom: 94px;
+        line-height: 1;
+        letter-spacing: 22px;
+        padding-left: 22px;
+    }
+}
+
+.scroll-ref {
+    @include font-sett($family: font(OpenSans-family), $size: 1.25rem, $height: 2);
+    &__des {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 62px;
+        height: 62px;
+        border: 2px solid color(primary-light);
+        border-radius: 50%;
+    }
+    &__icon {
+        position: absolute;
+        @include absolute-centered();
+        width: 34px;
+        height: 24px;
+        fill: color(primary-light);
+        &:hover {
+            fill: color(primary-blue);
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        line-height: 4;
+        font-size: 0.8rem;
+    }
+}
