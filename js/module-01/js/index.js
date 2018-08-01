@@ -14,11 +14,11 @@ const accessDeniedMessage = 'Доступ запрещен!';
 let login = prompt(loginRequest, '');
 let password;
 
-if (login === null || login === '') {
+if (login === null) {
   alert(cancelMessage);
 } else if (login === adminLogin) {
-  password = prompt(passwordRequest);
-  if (password === null || login === '') {
+  password = prompt(passwordRequest, '');
+  if (password === null) {
     alert(cancelMessage);
   } else if (password === adminPassword) {
     alert(welcomeMessage);
