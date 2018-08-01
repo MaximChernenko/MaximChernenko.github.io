@@ -20,21 +20,21 @@ body {
 }
 
 .log-list {
-    width: 154px;
+    width: 200px;
     display: flex;
-    justify-content: space-between;
 }
 
-.log-btn {
-    border: none;
-    padding: 7px 0;
-    background-color: transparent;
+.log-link {
+    display: block;
+    width: 100px;
+    line-height: 30px;
     font-size: 14px;
     color: #ffffff;
+    cursor: pointer;
 }
 
-.sign-btn {
-    padding: 7px 20px;
+.log-link:hover {
+    line-height: 26px;
     border: 2px solid #ffffff;
     border-radius: 20px;
 }
@@ -82,8 +82,12 @@ body {
     padding: 66px 0 56px 0;
 }
 
+.header-mgb {
+    margin-bottom: 18px;
+}
+
 .header__container {
-    margin: 0 auto 18px auto;
+    margin: 0 auto;
 }
 
 .black {
@@ -110,7 +114,7 @@ body {
 .icon::before {
     content: '';
     position: absolute;
-    right: 34px;
+    right: 41px;
     top: 84px;
     box-sizing: border-box;
     width: 40px;
@@ -211,6 +215,10 @@ body {
         margin-bottom: 144px;
     }
 
+    .header-mgb {
+        margin-bottom: 36px;
+    }
+
     .content {
         width: 414px;
         font-size: 24px;
@@ -224,17 +232,16 @@ body {
         padding: 10px 34px;
     }
 
-    .header__container {
-        margin-bottom: 36px;
-    }
-
     .black {
         width: auto;
         font-size: 22px;
     }
 
+    .mgb-md-26 {
+        margin-bottom: 26px;
+    }
+
     .partner-list {
-        margin-bottom: 14px;
         width: 484px;
     }
 
@@ -242,12 +249,16 @@ body {
         min-height: 244px;
     }
 
+    .icon::before {
+        right: 52px;
+    }
+
     .show-btn {
         padding: 10px 26px;
     }
 
     .log-list__page-header {
-        margin: 0 42px 0 auto;
+        margin-left: auto;
     }
 
 }

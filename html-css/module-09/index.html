@@ -17,15 +17,15 @@
 <body>
     <header class="container-fluid page-header">
         <div class="row overlay">
-            <div class="col-12">
-                <div class="row justify-content-md-between align-items-md-center mgb-md-144">
+            <div class="col-12 mgb-md-144">
+                <div class="row justify-content-md-between align-items-md-center">
                     <div class="col-12 col-md-4">
                         <ul class="log-list log-list__page-header">
                             <li class="log-item">
-                                <button class="btn log-btn">Log in</button>
+                                <a class="log-link">Log in</a>
                             </li>
                             <li class="log-item">
-                                <button class="btn log-btn sign-btn">Sign in</button>
+                                <a class="log-link">Sign in</a>
                             </li>
                         </ul>
                     </div>
@@ -43,60 +43,40 @@
     </header>
 
     <main class="container">
-        <div class="row">
-            <div class="col-12">
-                <section class="mod-container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h3 class="header header__container black">Meet a partner for your best holiday</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <ul class="partner-list">
-                                <div class="row mgb-32">
-                                    <div class="col-12 col-md-6 col-lg-3">
-                                        <li class="partner-item icon tv">
-                                            <img src="img/1.png" alt="avatar" class="partner-item__img"></img>
-                                            <h4 class="sign-header sign-header__partner-list">Bradley Hunter</h4>
-                                            <p class="sign-content">Based in Chicago. I love playing tennis and loud music.</p>
-                                        </li>
-                                    </div>
-                                    <div class="col-12 col-md-6 order-md-2 col-lg-3">
-                                        <li class="partner-item icon lock">
-                                            <img src="img/2.png" alt="avatar" class="partner-item__img"></img>
-                                            <h4 class="sign-header sign-header__partner-list">Lucas Marsha</h4>
-                                            <p class="sign-content">I get my inspiration from nature and objects around me. I have a passion to colours,
-                                                typography and skateboards.
-                                            </p>
-                                        </li>
-                                    </div>
-                                    <div class="col-12 col-md-6 order-md-1 col-lg-3">
-                                        <li class="partner-item icon coffee">
-                                            <img src="img/3.png" alt="avatar" class="partner-item__img"></img>
-                                            <h4 class="sign-header sign-header__partner-list">Heather Walker</h4>
-                                            <p class="sign-content">I'm a happy person that loves cats and climbing on mountains.</p>
-                                        </li>
-                                    </div>
-                                    <div class="col-12 col-md-6 order-md-3 col-lg-3">
-                                        <li class="partner-item icon plane">
-                                            <img src="img/4.png" alt="avatar" class="partner-item__img"></img>
-                                            <h4 class="sign-header sign-header__partner-list">Bradley Hunter</h4>
-                                            <p class="sign-content">Based in Chicago. I love playing tennis and loud music.</p>
-                                        </li>
-                                    </div>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <button class="btn show-btn">See other partners</button>
-                        </div>
-                    </div>
-                </section>
+        <section class="row mod-container">
+            <div class="col-12 header-mgb">
+                <h3 class="header header__container black">Meet a partner for your best holiday</h3>
             </div>
-        </div>
+            <div class="col-12 mgb-md-26">
+                <ul class="row partner-list mgb-32">
+                    <li class="partner-item icon tv col-12 col-md-6 col-lg-3">
+                        <img src="img/1.png" alt="avatar" class="partner-item__img"></img>
+                        <h4 class="sign-header sign-header__partner-list">Bradley Hunter</h4>
+                        <p class="sign-content">Based in Chicago. I love playing tennis and loud music.</p>
+                    </li>
+                    <li class="partner-item icon lock col-12 col-md-6 order-md-2 col-lg-3">
+                        <img src="img/2.png" alt="avatar" class="partner-item__img"></img>
+                        <h4 class="sign-header sign-header__partner-list">Lucas Marsha</h4>
+                        <p class="sign-content">I get my inspiration from nature and objects around me. I have a passion to colours, typography and
+                            skateboards.
+                        </p>
+                    </li>
+                    <li class="partner-item icon coffee col-12 col-md-6 order-md-1 col-lg-3">
+                        <img src="img/3.png" alt="avatar" class="partner-item__img"></img>
+                        <h4 class="sign-header sign-header__partner-list">Heather Walker</h4>
+                        <p class="sign-content">I'm a happy person that loves cats and climbing on mountains.</p>
+                    </li>
+                    <li class="partner-item icon plane col-12 col-md-6 order-md-3 col-lg-3">
+                        <img src="img/4.png" alt="avatar" class="partner-item__img"></img>
+                        <h4 class="sign-header sign-header__partner-list">Bradley Hunter</h4>
+                        <p class="sign-content">Based in Chicago. I love playing tennis and loud music.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <button class="btn show-btn">See other partners</button>
+            </div>
+        </section>
     </main>
 
 </body>
