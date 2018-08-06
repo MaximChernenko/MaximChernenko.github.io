@@ -16,13 +16,13 @@ body {
         background-image: url(../img/11@2x.jpg);
     }
 }
-  
-.overlay {
+
+.header__overlay {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.915)), to(rgba(252, 227, 138, 0.915)));
     background-image: -webkit-linear-gradient(top, rgba(243, 129, 129, 0.915), rgba(252, 227, 138, 0.915));
     background-image: -o-linear-gradient(top, rgba(243, 129, 129, 0.915), rgba(252, 227, 138, 0.915));
     background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.915), rgba(252, 227, 138, 0.915));
-    min-height: 1000px;
+    padding-bottom: 230px
 }
 
 .container {
@@ -36,34 +36,28 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .inner-container {
-    margin-bottom: 160px;
-}
-
-.nav-container {
     width: 622px;
 }
 
-.list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.nav-container {
+    margin-bottom: 160px;
 }
 
-.header__menu {
+.menu-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     width: 496px;
     line-height: 36px;
     height: 36px;
@@ -80,7 +74,7 @@ body {
     fill: #fce38a;
 }
 
-.header__item::after {
+.menu-header__item::after {
     display: none;
     content: '';
     width: 100%;
@@ -88,24 +82,20 @@ body {
     background-color: #fce38a;
 }
 
-.header__item:hover .header__link {
+.menu-header__item:hover .menu-header__link {
     color: #fce38a;
 }
 
-.header__item:hover::after {
+.menu-header__item:hover::after {
     display: block;
 }
 
-.header__logo, .header__main-title, .btn, .wrapper__header {
+.header__logo, .header__main-title, .btn, .section-services__header, .section-team__header {
     font-weight: 700;
 }
 
-.header__logo, .header__link, .header__title, .header__main-title, .btn {
+.header__logo, .menu-header__link, .header__title, .header__main-title, .btn {
     color: #ffffff;
-}
-
-.link {
-    text-decoration: none;
 }
 
 .header__logo {
@@ -113,7 +103,7 @@ body {
     line-height: 36px;
 }
 
-.header__link {
+.menu-header__link {
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -148,6 +138,9 @@ body {
 .wrapper {
     width: 1200px;
     margin: 0 auto;
+}
+
+.main {
     padding-top: 44px;
     padding-bottom: 10px;
 }
@@ -156,20 +149,25 @@ body {
     padding-bottom: 70px;
 }
 
-.wrapper__sign-header {
+.section-services__sign-header, .section-team__sign-header {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     margin: 0 0 12px;
 }
 
-.wrapper__header {
+.section-services__header, .section-team__header {
+    position: relative;
     font-size: 30px;
-    margin: 0 0 40px;
+    margin: 0 0 83px;
 }
 
-.wrapper__header::after {
-    display: block;
-    margin: 40px auto 0;
+.section-services__header::after, .section-team__header::after {
+    position: absolute;
+    top: 74px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     content: '';
     width: 60px;
     height: 3px;
@@ -181,13 +179,13 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     min-height: 285px;
     text-align: left;
 }
@@ -195,7 +193,7 @@ body {
 .item-section-services {
     position: relative;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding-left: 92px;
     width: 368px;
 }
@@ -240,7 +238,7 @@ body {
     margin: 0;
 }
 
-.item-section-services__sign-header, .item-team__title, .wrapper__header, .wrapper__sign-header, .copyright {
+.item-section-services__sign-header, .item-team__title, .section-services__header, .section-services__sign-header, .section-team__header, .section-team__sign-header, .copyright-footer {
     color: #333333;
 }
 
@@ -278,10 +276,10 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .item-team {
@@ -343,8 +341,8 @@ body {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 224px;
     height: 56px;
 }
@@ -352,7 +350,7 @@ body {
 .btn-container__btn {
     padding: 14px 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     width: 25%;
     border: none;
     background-color: #fce38a;
@@ -406,26 +404,24 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 1200px;
-    margin: 0 auto;
+    -ms-flex-align: center;
+    align-items: center;
     padding-bottom: 10px;
 }
 
-.copyright {
+.copyright-footer {
     margin: 0;
     font-size: 14px;
 }
 
-.copyright__desgn {
+.copyright-footer__desgn {
     color: #f38181;
 }
 
-.sub-form {
+.footer__sub-form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

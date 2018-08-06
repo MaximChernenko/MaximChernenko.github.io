@@ -1,31 +1,56 @@
 %base-position {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 %list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+%wrapper__sign-header {
+  font-family: $Kaushan-family;
+  font-size: map-get($map: $font-sizes, $key: middle);
+  margin: 0 0 12px;
+  color: color(dark-grey);
+}
+
+%wrapper__header {
+  position: relative;
+  font-weight: 700;
+  font-size: map-get($map: $font-sizes, $key: large);
+  color: color(dark-grey);
+  margin: 0 0 83px;
+  &::after {
+    position: absolute;
+    top: 74px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: color(light-red);
+  }
 }
 
 %btn {
-    color: color(primary-white);
-    font-weight: 700;
-    font-size: map-get($map: $font-sizes, $key: small);
-    cursor: pointer;
-    border: none;
-    text-transform: uppercase;
+  color: color(primary-white);
+  font-weight: 700;
+  font-size: map-get($map: $font-sizes, $key: small);
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
 }
 
 %font-middle-style {
-    font-family: $Roboto-family;
-    font-size: map-get($map: $font-sizes, $key: x-small);
-    line-height: map-get($map: $line-heights, $key: middle);
+  font-family: $Roboto-family;
+  font-size: map-get($map: $font-sizes, $key: x-small);
+  line-height: map-get($map: $line-heights, $key: middle);
 }
 
 %font-light-italic {
-    font-weight: 300;
-    font-style: italic;
+  font-weight: 300;
+  font-style: italic;
 }

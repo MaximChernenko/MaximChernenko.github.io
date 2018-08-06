@@ -1,18 +1,17 @@
 $colors: (
-    dark-grey: #333333,
-    primary-white: #ffffff,
-    primary-grey: #e5e5e5,
-    light-red: #f38181,
-    light-grey: #cccccc,
-    light-green: #95e1d3,
-    golden: #fce38a,
-    red-orange: #f9bd87,
-    white-grey: #999999
+  dark-grey: #333333,
+  primary-white: #ffffff,
+  primary-grey: #e5e5e5,
+  light-red: #f38181,
+  light-grey: #cccccc,
+  light-green: #95e1d3,
+  golden: #fce38a,
+  red-orange: #f9bd87,
+  white-grey: #999999
 );
-
 @function color($key) {
-    @if map-has-key($map: $colors, $key: $key) {
-        @return map-get($map: $colors, $key: $key);
-    }
-    @return null;
+  @if map-has-key($map: $colors, $key: $key) {
+    @return map-get($map: $colors, $key: $key);
+  }
+  @return null;
 }

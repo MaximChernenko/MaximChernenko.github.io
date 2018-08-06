@@ -1,129 +1,137 @@
 .section-team {
-    padding-bottom: 78px;
-    border-bottom: 1px solid color(primary-grey);
+  padding-bottom: 78px;
+  border-bottom: 1px solid color(primary-grey);
+}
+
+.section-team__sign-header {
+  @extend %wrapper__sign-header;
+}
+
+.section-team__header {
+  @extend %wrapper__header;
 }
 
 .section-team__text {
-    @extend %font-middle-style;
-    margin: 0 auto 86px;
-    width: 980px;
-    color: color(white-grey);
+  @extend %font-middle-style;
+  margin: 0 auto 86px;
+  width: 980px;
+  color: color(white-grey);
 }
 
 .section-team__list {
-    @extend %list;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .item-team {
-    width: 380px;
-    &:hover .item-team__img {
-        top: -10px;
-        left: -10px;
-    }
-    &:hover .item-team__overlay {
-        opacity: 0.9;
-    }
-    &:hover .btn-container {
-        display: flex;
-    }
+  width: 380px;
+  &:hover .item-team__img {
+    top: -10px;
+    left: -10px;
+  }
+  &:hover .item-team__overlay {
+    opacity: 0.9;
+  }
+  &:hover .btn-container {
+    display: flex;
+  }
 }
 
 .item-team__title {
-    font-size: map-get($map: $font-sizes, $key: small);
-    color: color(dark-grey);
+  font-size: map-get($map: $font-sizes, $key: small);
+  color: color(dark-grey);
 }
 
 .item-team__text {
-    @extend %font-middle-style;
-    @extend %font-light-italic;
-    color: color(white-grey);
+  @extend %font-middle-style;
+  @extend %font-light-italic;
+  color: color(white-grey);
 }
 
 .item-team__flow {
-    margin: 0 0 30px;
-    position: relative;
-    height: 470px;
-    background-color: color(light-green);
+  margin: 0 0 30px;
+  position: relative;
+  height: 470px;
+  background-color: color(light-green);
 }
 
 .item-team__img {
-    position: absolute;
-    width: 380px;
-    height: 470px;
-    top: 0;
-    left: 0;
-    background-size: contain;
+  position: absolute;
+  width: 380px;
+  height: 470px;
+  top: 0;
+  left: 0;
+  background-size: contain;
 }
 
 .Matthew {
-    background-image: url(../img/1.jpg);
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../img/1@2x.jpg);
-    }
+  background-image: url(../img/1.jpg);
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../img/1@2x.jpg);
+  }
 }
 
 .Christopher {
-    background-image: url(../img/2.jpg);
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../img/2@2x.jpg);
-    }
+  background-image: url(../img/2.jpg);
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../img/2@2x.jpg);
+  }
 }
 
 .Michael {
-    background-image: url(../img/3.jpg);
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../img/3@2x.jpg);
-    }
+  background-image: url(../img/3.jpg);
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../img/3@2x.jpg);
+  }
 }
 
 .item-team__overlay {
-    height: 470px;
-    opacity: 0;
-    background-image: linear-gradient(to bottom, #ee8889, #eed888);
+  height: 470px;
+  opacity: 0;
+  background-image: linear-gradient(to bottom, #ee8889, #eed888);
 }
 
 .btn-container {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 224px;
-    height: 56px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 224px;
+  height: 56px;
 }
 
 .btn-container__btn {
-    padding: 0;
-    box-sizing: border-box;
-    width: 25%;
-    border: none;
-    background-color: color(golden);
-    cursor: pointer;
-    &:not(:last-child) {
-        border-right: 1px solid color(red-orange);
-    }
-    &:hover {
-        background-color: color(light-red);
-    }
-    &:hover .social-icon {
-        fill: color(primary-white);
-    }
+  padding: 0;
+  box-sizing: border-box;
+  width: 25%;
+  border: none;
+  background-color: color(golden);
+  cursor: pointer;
+  &:not(:last-child) {
+    border-right: 1px solid color(red-orange);
+  }
+  &:hover {
+    background-color: color(light-red);
+  }
+  &:hover .social-icon {
+    fill: color(primary-white);
+  }
 }
 
 .social-icon {
-    width: 26px;
-    height: 26px;
-    fill: color(light-red);
+  width: 26px;
+  height: 26px;
+  fill: color(light-red);
 }
 
 .item-team__title {
-    margin: 0 0 8px;
-    text-transform: uppercase;
+  margin: 0 0 8px;
+  text-transform: uppercase;
 }
 
 .item-team__text {
-    margin: 0;
+  margin: 0;
 }

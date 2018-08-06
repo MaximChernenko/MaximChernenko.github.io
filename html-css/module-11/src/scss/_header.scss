@@ -1,105 +1,109 @@
 .header {
-    min-width: $main-width;
-    background-image: url(../img/11.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../img/11@2x.jpg);
-    }
+  min-width: $main-width;
+  background-image: url(../img/11.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../img/11@2x.jpg);
+  }
 }
 
-.overlay {
-    background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.915), rgba(252, 227, 138, 0.915));
-    min-height: 1000px;
+.header__overlay {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(243, 129, 129, 0.915),
+    rgba(252, 227, 138, 0.915)
+  );
+  padding-bottom: 230px
 }
 
 .container {
-    margin: $block-center;
-    width: $main-width;
-    padding-top: 24px;
+  margin: $block-center;
+  width: $main-width;
+  padding-top: 24px;
 }
 
 .inner-container {
-    @extend %base-position;
-    margin-bottom: 160px;
+  @extend %base-position;
+  width: 622px;
 }
 
 .nav-container {
-    @extend %base-position;
-    width: 622px;
+  @extend %base-position;
+  margin-bottom: 160px;
 }
 
-.header__menu {
-    @extend %list;
-    display: flex;
-    justify-content: space-between;
-    width: 496px;
-    line-height: map-get($map: $line-heights, $key: large);
-    height: 36px;
+.menu-header {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+  width: 496px;
+  line-height: map-get($map: $line-heights, $key: large);
+  height: 36px;
 }
 
 .nav-icon {
-    fill: color(primary-white);
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    &:hover {
-        fill: color(golden);
-    }
+  fill: color(primary-white);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  &:hover {
+    fill: color(golden);
+  }
 }
 
-.header__item {
-    &:after {
-        display: none;
-        content: '';
-        width: 100%;
-        height: 4px;
-        background-color: color(golden);
-    }
-    &:hover .header__link {
-        color: color(golden);
-    }
-    &:hover::after {
-        display: block;
-    }
+.menu-header__item {
+  &:after {
+    display: none;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: color(golden);
+  }
+  &:hover .menu-header__link {
+    color: color(golden);
+  }
+  &:hover::after {
+    display: block;
+  }
 }
 
 .header__logo {
-    text-decoration: none;
-    color: color(primary-white);
-    font-weight: 700;
-    font-size: map-get($map: $font-sizes, $key: large);
-    line-height: map-get($map: $line-heights, $key: large);
+  text-decoration: none;
+  color: color(primary-white);
+  font-weight: 700;
+  font-size: map-get($map: $font-sizes, $key: large);
+  line-height: map-get($map: $line-heights, $key: large);
 }
 
-.header__link {
-    text-decoration: none;
-    color: color(primary-white);
-    font-size: map-get($map: $font-sizes, $key: small);
-    text-transform: uppercase;
+.menu-header__link {
+  text-decoration: none;
+  color: color(primary-white);
+  font-size: map-get($map: $font-sizes, $key: small);
+  text-transform: uppercase;
 }
 
 .header__title {
-    color: color(primary-white);
-    margin: 0 0 30px 0;
-    font-family: $Kaushan-family;
-    font-size: map-get($map: $font-sizes, $key: very-large);
+  color: color(primary-white);
+  margin: 0 0 30px 0;
+  font-family: $Kaushan-family;
+  font-size: map-get($map: $font-sizes, $key: very-large);
 }
 
 .header__main-title {
-    color: color(primary-white);
-    font-weight: 700;
-    margin: 0 auto 96px auto;
-    width: 840px;
-    text-transform: uppercase;
-    font-size: map-get($map: $font-sizes, $key: extra-large);
-    line-height: map-get($map: $line-heights, $key: small);
+  color: color(primary-white);
+  font-weight: 700;
+  margin: 0 auto 96px auto;
+  width: 840px;
+  text-transform: uppercase;
+  font-size: map-get($map: $font-sizes, $key: extra-large);
+  line-height: map-get($map: $line-heights, $key: small);
 }
 
 .btn-more {
-    @extend %btn;
-    padding: 10px 28px;
-    border: 3px solid color(primary-white);
-    background-color: transparent;
+  @extend %btn;
+  padding: 10px 28px;
+  border: 3px solid color(primary-white);
+  background-color: transparent;
 }
