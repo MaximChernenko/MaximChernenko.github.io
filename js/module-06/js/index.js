@@ -25,7 +25,10 @@ class Hamburger {
    */
 
   addTopping(topping) {
-    if(this._toppings.includes(topping)) return;
+    if(this._toppings.includes(topping)) {
+      console.log('Вы не можете добавить одинаковые типы добавки!');
+      return;
+    }
     this._toppings.push(topping);
   }
 
@@ -35,9 +38,11 @@ class Hamburger {
    */
 
   removeTopping(topping) {
-  if(this._toppings.includes(topping)) {
+    if(this._toppings.includes(topping)) {
       this._toppings = this._toppings.filter(item => item !== topping);
+      return;
     }
+    console.log('Вы не можете удалить несуществующую добавку!');
   }
 
   /**
@@ -75,10 +80,7 @@ class Hamburger {
   get price() {
     let totalPrice = this._size.price;
     totalPrice += this._stuffing.price;
-    for(const item of this._toppings) {
-      totalPrice += item.price;
-    }
-    
+    totalPrice += this._toppings.reduce((acc, item) => acc + item.price, 0);
     return totalPrice;
   }
 
@@ -90,10 +92,7 @@ class Hamburger {
   get calories() {
     let totalCalories = this._size.calories;
     totalCalories += this._stuffing.calories;
-    for(const item of this._toppings) {
-      totalCalories += item.calories;
-    }
-    
+    totalCalories += this._toppings.reduce((acc, item) => acc + item.calories, 0);
     return totalCalories;
   }
 }
