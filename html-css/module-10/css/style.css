@@ -25,13 +25,13 @@ body {
     padding-bottom: 230px
 }
 
-.container {
+.header__container {
     margin: 0 auto;
     width: 1200px;
     padding-top: 24px;
 }
 
-.inner-container, .nav-container {
+.nav__inner, nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -43,15 +43,15 @@ body {
     align-items: center;
 }
 
-.inner-container {
+.nav__inner {
     width: 622px;
 }
 
-.nav-container {
+nav {
     margin-bottom: 160px;
 }
 
-.menu-header {
+.main-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -63,18 +63,18 @@ body {
     height: 36px;
 }
 
-.nav-icon {
+.nav__icon {
     fill: #fff;
     width: 20px;
     height: 20px;
     cursor: pointer;
 }
 
-.nav-icon:hover {
+.nav__icon:hover {
     fill: #fce38a;
 }
 
-.menu-header__item::after {
+.main-menu__item::after {
     display: none;
     content: '';
     width: 100%;
@@ -82,19 +82,19 @@ body {
     background-color: #fce38a;
 }
 
-.menu-header__item:hover .menu-header__link {
+.main-menu__item:hover .main-menu__link {
     color: #fce38a;
 }
 
-.menu-header__item:hover::after {
+.main-menu__item:hover::after {
     display: block;
 }
 
-.header__logo, .header__main-title, .btn, .section-services__header, .section-team__header {
+.header__logo, .header__main-title, .btn, .services__title, .team__title {
     font-weight: 700;
 }
 
-.header__logo, .menu-header__link, .header__title, .header__main-title, .btn {
+.header__logo, .main-menu__link, .header__title, .header__main-title, .btn {
     color: #ffffff;
 }
 
@@ -103,7 +103,7 @@ body {
     line-height: 36px;
 }
 
-.menu-header__link {
+.main-menu__link {
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -145,23 +145,23 @@ body {
     padding-bottom: 10px;
 }
 
-.section-services {
+.services {
     padding-bottom: 70px;
 }
 
-.section-services__sign-header, .section-team__sign-header {
+.services__sign-title, .team__sign-title {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     margin: 0 0 12px;
 }
 
-.section-services__header, .section-team__header {
+.services__title, .team__title {
     position: relative;
     font-size: 30px;
     margin: 0 0 83px;
 }
 
-.section-services__header::after, .section-team__header::after {
+.services__title::after, .team__title::after {
     position: absolute;
     top: 74px;
     left: 50%;
@@ -174,7 +174,7 @@ body {
     background-color: #f38181;
 }
 
-.section-services__list {
+.services__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -190,7 +190,7 @@ body {
     text-align: left;
 }
 
-.item-section-services {
+.services-item {
     position: relative;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -198,7 +198,7 @@ body {
     width: 368px;
 }
 
-.item-section-services::before {
+.services-item::before {
     position: absolute;
     top: 0;
     left: 31px;
@@ -230,29 +230,29 @@ body {
     content: url(../img/icons/8.svg);
 }
 
-.item-section-services__sign-header {
+.services-item__sign-title {
     margin: 0 0 16px;
 }
 
-.item-section-services__text {
+.services-item__text {
     margin: 0;
 }
 
-.item-section-services__sign-header, .item-team__title, .section-services__header, .section-services__sign-header, .section-team__header, .section-team__sign-header, .copyright-footer {
+.services-item__sign-title, .item-team__title, .services__title, .services__sign-title, .team__title, .team__sign-title, .copyright-footer {
     color: #333333;
 }
 
-.item-section-services__sign-header, .item-team__title {
+.services-item__sign-title, .item-team__title {
     font-size: 14px;
 }
 
-.item-section-services__text, .section-team__text, .item-team__text, .input::-webkit-input-placeholder {
+.services-item__text, .team__description, .item-team__text, .input::-webkit-input-placeholder {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     line-height: 24px;
 }
 
-.item-section-services__text, .section-team__text, .item-team__text {
+.services-item__text, .team__description, .item-team__text {
     color: #999999;
 }
 
@@ -261,17 +261,17 @@ body {
     font-style: italic;
 }
 
-.section-team {
+.team {
     padding-bottom: 78px;
     border-bottom: 1px solid #e5e5e5;
 }
 
-.section-team__text {
+.team__description {
     margin: 0 auto 86px;
     width: 980px;
 }
 
-.section-team__list {
+.team__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

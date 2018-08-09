@@ -10,14 +10,14 @@
   margin: 0;
 }
 
-%wrapper__sign-header {
+%wrapper__sign-title {
   font-family: $Kaushan-family;
   font-size: map-get($map: $font-sizes, $key: middle);
   margin: 0 0 12px;
   color: color(dark-grey);
 }
 
-%wrapper__header {
+%wrapper__title {
   position: relative;
   font-weight: 700;
   font-size: map-get($map: $font-sizes, $key: large);

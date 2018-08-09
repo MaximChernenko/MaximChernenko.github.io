@@ -1,20 +1,18 @@
 .footer {
   @extend %base-position;
   padding-bottom: 10px;
+  &__sub-form {
+    display: flex;
+  }
 }
 
 .copyright-footer {
   margin: 0;
   font-size: map-get($map: $font-sizes, $key: small);
   color: color(dark-grey);
-}
-
-.copyright-footer__desgn {
-  color: color(light-red);
-}
-
-.footer__sub-form {
-  display: flex;
+  &__desgn {
+    color: color(light-red);
+  }
 }
 
 .input {
