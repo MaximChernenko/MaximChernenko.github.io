@@ -2,11 +2,6 @@ body {
     font-family: 'Montserrat';
 }
 
-.wrapper {
-    width: 1400px;
-    margin: auto;
-}
-
 .main-header {
     display: flex;
     justify-content: space-between;
