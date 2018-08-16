@@ -1,0 +1,70 @@
+body {
+    padding-top: 60px;
+    margin: 0;
+}
+
+.stopwatch {
+    width: 500px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.time {
+    margin: 0 0 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+}
+
+.btn {
+    cursor: pointer;
+    width: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 0;
+    border: 2px solid #1a1919;
+}
+
+.btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+.btn:disabled {
+    color: #ffffff;
+}
+
+.laps {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.laps li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    list-style: square;
+}
+
+.btn--disabled {
+    cursor: not-allowed;
+}
+
+.btn--transparent {
+    background-color: transparent;
+}
+
+.btn--green {
+    background-color: #079207;
+}
+
+.btn--yellow {
+    background-color: #c5c527;
+}
+
+.btn--blue {
+    background-color: #a2a2cf;
+}
+
+.btn--red {
+    background-color: #ec3636;
+}
