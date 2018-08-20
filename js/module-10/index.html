@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework-10</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <ul class="list">
+            <li class="list__item">
+                <form action="" class="form js-get-all-users">
+                    <button type="submit" class="form__btn">
+                        Get All Users
+                    </button>
+                </form>
+            </li>
+            <li class="list__item">
+                <form action="" class="form js-get-user">
+                    <label for="user-id">User Id:</label>
+                    <input type="text" name="user-id" id="user-id" class="form__input js-id-input-get-user" required autocomplete="off">
+                    <button type="submit" class="form__btn">
+                        Get User
+                    </button>
+                </form>
+            </li>
+            <li class="list__item">
+                <form action="" class="form js-add-user">
+                    <label for="user-name">User Name:</label>
+                    <input type="text" name="user-name" id="user-name" class="form__input js-name-input-add-user" required autocomplete="off">
+                    <label for="user-age">User Age:</label>
+                    <input type="text" name="user-age" id="user-age" class="form__input js-age-input-add-user" required autocomplete="off">
+                    <button type="submit" class="form__btn">
+                        Add User
+                    </button>
+                </form>
+            </li>
+            <li class="list__item">
+                <form action="" class="form js-remove-user">
+                    <label for="user-id-remove">User Id:</label>
+                    <input type="text" name="user-id" id="user-id-remove" class="form__input js-id-input-remove-user" required autocomplete="off">
+                    <button type="submit" class="form__btn">
+                        Remove User
+                    </button>
+                </form>
+            </li>
+            <li class="list__item">
+                <form action="" class="form js-update-user">
+                    <label for="user-id-update">User Id:</label>
+                    <input type="text" name="user-id" id="user-id-update" class="form__input js-id-input-update-user" required autocomplete="off">
+                    <label for="user-name-update">User Name:</label>
+                    <input type="text" name="user-name" id="user-name-update" class="form__input js-name-input-update-user" required autocomplete="off">
+                    <label for="user-age-update">User Age:</label>
+                    <input type="text" name="user-age" id="user-age-update" class="form__input js-age-input-update-user" required autocomplete="off">
+                    <button type="submit" class="form__btn">
+                        Update User
+                    </button>
+                </form>
+            </li>
+        </ul>
+        <div class="result">
+            <h2 class="result__title">Result:</h2>
+            <div class="result__field js-result"></div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
