@@ -363,6 +363,12 @@ p {
     margin: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .wrapper {
     width: 1200px;
     margin: 0 auto;
@@ -423,9 +429,12 @@ p {
     margin-right: 50px;
 }
 
+.card-item__text, .card-item__url, .card-item__title, .card-item__description {
+    margin-bottom: 20px;
+}
+
 .card-item__text {
     position: relative;
-    margin-bottom: 20px;
 }
 
 .card-item__text::after {

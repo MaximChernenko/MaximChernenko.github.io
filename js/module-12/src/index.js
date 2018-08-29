@@ -1,8 +1,11 @@
+"use strict";
+
 import "./css/normalize.css";
 import "./css/styles.css";
 import cardItemTmpl from "./templates/card.hbs";
-import storageModule from './services/storage';
-import validator from './services/validator';
+import storageModule from "./services/storage";
+import validator from "./services/validator";
+import api from "./services/linkPreviewGetter";
 
 const form = document.querySelector(".form");
 const input = document.querySelector(".form__input");
@@ -28,32 +31,38 @@ function onDeleteCard({ target }) {
 }
 
 function saveUrl(url) {
-  const isNotUnique = checkValue(url);
-  if (isNotUnique) {
-    alert("Такая закладка уже есть!");
-    return;
-  }
   const isValid = validateUrl(url);
-  if(!isValid) {
-    alert('url не валидный!');
+  if (!isValid) {
+    alert("url не валидный!");
     return;
   }
-  cardList.push(url);
-  updateLocalStorage();
-  updateView();
+  api(url)
+    .then(response => {
+      const data = response.data;
+      console.log(data);
+      const isNotUnique = checkValue(data);
+      if (isNotUnique) {
+        alert("Такая закладка уже есть!");
+        return;
+      }
+      cardList.push(data);
+      updateLocalStorage();
+      updateView();
+    })
+    .catch(() => alert("Извините, но ресурс недоступен!"));
 }
 
 function deleteUrl(url) {
   cardList.forEach((item, idx, arr) => {
-    if (item === url) {
+    if (item.url === url) {
       arr.splice(idx, 1);
     }
   });
   updateLocalStorage();
 }
 
-function checkValue(url) {
-  return cardList.includes(url);
+function checkValue(data) {
+  return cardList.some(item => item.url === data.url);
 }
 
 function updateView() {
@@ -62,10 +71,10 @@ function updateView() {
 
 function createMarkUp() {
   const reversedList = [...cardList].reverse();
-  return reversedList.reduce((acc, url) => {
-    const optUrl = optimizeUrl(url);
-    return acc + cardItemTmpl({ url: optUrl });
-  }, "");``
+  return reversedList.reduce((acc, data) => {
+    const optUrl = optimizeUrl(data.url);
+    return acc + cardItemTmpl({ ...data, url: optUrl });
+  }, "");
 }
 
 function optimizeUrl(url) {
@@ -85,11 +94,11 @@ function insertWbrTag(arr) {
 }
 
 function updateLocalStorage() {
-    storageModule.setItem('card-list', cardList);
+  storageModule.setItem("card-list", cardList);
 }
 
 function getFromLocalStorage() {
-    return storageModule.getItem('card-list');
+  return storageModule.getItem("card-list");
 }
 
 function validateUrl(url) {

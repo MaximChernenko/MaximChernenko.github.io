@@ -3,6 +3,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 
+require("babel-core").transform("code", {
+  plugins: ["transform-object-rest-spread"]
+});
+
 module.exports = {
   entry: ["babel-polyfill", "./src/index.js"], //точко входа
   output: {
