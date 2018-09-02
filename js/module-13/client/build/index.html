@@ -6,17 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Homework 13</title>
-<link href="css/styles.css?bbdb2f87aff02ac86511" rel="stylesheet"></head>
+<link href="css/styles.css?de917c24b86cc6f1e44c" rel="stylesheet"></head>
 
 <body>
+    <div class="modal-backdrop d-none">
+        <div class="modal">
+            <form action="" class="modal-form">
+                <label for="user-edited-url" class="modal-form__label">Введите url:</label>
+                <input type="text" name="user-edited-url" id="user-edited-url" class="modal-form__input" autocomplete="off">
+                <button type="submit" class="modal-form__btn" data-action="change">Изменить закладку</button>
+                <button class="modal-form__btn" data-action="cancel">Отменить</button>
+            </form>
+        </div>
+    </div>
     <div class="wrapper">
         <form action="" class="form">
             <label for="user-url" class="form__label">Введите url:</label>
-            <input type="url" name="user-url" id="user-url" class="form__input" autofocus autocomplete="off" required >
+            <input type="url" name="user-url" id="user-url" class="form__input" autofocus autocomplete="off" required>
             <button type="submit" class="form__btn">Добавить закладку</button>
         </form>
         <ul class="card-list"></ul>
     </div>
-<script type="text/javascript" src="main.js?bbdb2f87aff02ac86511"></script></body>
+<script type="text/javascript" src="main.js?de917c24b86cc6f1e44c"></script></body>
 
 </html>
