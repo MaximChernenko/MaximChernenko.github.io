@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework 13</title>
+</head>
+
+<body>
+    <div class="modal-backdrop d-none">
+        <div class="modal">
+            <form action="" class="modal-form">
+                <label for="user-edited-url" class="modal-form__label">Введите url:</label>
+                <input type="text" name="user-edited-url" id="user-edited-url" class="modal-form__input" autocomplete="off">
+                <button type="submit" class="modal-form__btn" data-action="change">Изменить закладку</button>
+                <button class="modal-form__btn" data-action="cancel">Отменить</button>
+            </form>
+        </div>
+    </div>
+    <div class="wrapper">
+        <form action="" class="form">
+            <label for="user-url" class="form__label">Введите url:</label>
+            <input type="url" name="user-url" id="user-url" class="form__input" autofocus autocomplete="off" required>
+            <button type="submit" class="form__btn">Добавить закладку</button>
+        </form>
+        <ul class="card-list"></ul>
+    </div>
+</body>
+
+</html>
