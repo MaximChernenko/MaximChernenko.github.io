@@ -48,6 +48,7 @@ function saveUrl(url) {
       cardList.push(data);
       updateLocalStorage();
       updateView();
+      input.value = '';
     })
     .catch(() => alert("Извините, но ресурс недоступен!"));
 }

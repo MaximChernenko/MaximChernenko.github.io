@@ -3,6 +3,8 @@
     <p class="card-item__url">{{{url}}}</p>
     <p class="card-item__title"><u>Title:</u> {{title}}</p>
     <p class="card-item__description"><u>Description</u>:<br>{{description}}</p>
+    {{#if image}}
     <img src="{{image}}" alt="logo img" class="card-item__img">
+    {{/if}}
     <button class="delete-btn">Удалить</button>
 </li>
