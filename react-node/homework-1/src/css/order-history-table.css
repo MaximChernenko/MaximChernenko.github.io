@@ -1,0 +1,22 @@
+.table {
+    margin: 0 auto 30px;
+    width: 650px;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+.table__caption {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+tr, th, td {
+    border: 1px solid #000000;
+}
+
+th, td {
+    padding: 5px;
+}
