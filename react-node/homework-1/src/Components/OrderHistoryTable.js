@@ -4,7 +4,7 @@ import "../css/order-history-table.css";
 const OrderHistoryTable = ({ data }) => (
   <table className="table">
     <caption className="table__caption">Order history</caption>
-    <tfoot>
+    <tbody>
       <tr>
         <th>Date</th>
         <th>Price</th>
@@ -19,7 +19,7 @@ const OrderHistoryTable = ({ data }) => (
           <td>{item.rating}</td>
         </tr>
       ))}
-    </tfoot>
+    </tbody>
   </table>
 );
 

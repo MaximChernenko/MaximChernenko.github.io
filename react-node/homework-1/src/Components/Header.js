@@ -1,38 +1,15 @@
 import React from "react";
+import Logo from "./Logo";
+import Nav from "./Nav";
+import User from "./User";
+import menuItems from "../configs/configMenuItems";
 import "../css/header.css";
 
 const Header = () => (
   <header className="header">
-    <a className="header__logo" href="google.com">
-      Logo
-    </a>
-    <nav>
-      <ul className="header__list">
-        <li className="header__item">
-          <a className="header__link" href="google.com">
-            Item1
-          </a>
-        </li>
-        <li className="header__item">
-          <a className="header__link" href="google.com">
-            Item2
-          </a>
-        </li>
-        <li className="header__item">
-          <a className="header__link" href="google.com">
-            Item3
-          </a>
-        </li>
-        <li className="header__item">
-          <a className="header__link" href="google.com">
-            Item4
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div className="user">
-      <p className="user__text">Bob Kelly</p>
-    </div>
+    <Logo />
+    <Nav items={menuItems} />
+    <User name="Bob Kelly"/>
   </header>
 );
 
